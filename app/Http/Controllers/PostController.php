@@ -7,14 +7,16 @@ use App\http\Requests\PostRequest;
 
 class PostController extends Controller
 {
-    public function store(PostRequest $request){
-        Posts::create($request-> validated());
-        return redirect('employee')-> with('success', 'Employee created successfully.'); 
-    }
+   // Create function
+   public function store(PostRequest $request)
+   {
+       Posts::create($request->validated());
+       return redirect('posts')->with('success', 'Post created successfully...!');
+   }
 
-    public function create(){
-        return view('employee.create');
-        }
+   public function create()
+   {
+       return view('posts.create'); // Update to match the context
     
-    
+}
 }
