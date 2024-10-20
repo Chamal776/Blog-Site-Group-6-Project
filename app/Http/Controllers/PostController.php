@@ -6,12 +6,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    // Edit function
     public function edit($id)
-{
-    
-    $blog = Blog::findOrFail($id);
+    {
+        $post = Posts::findOrFail($id);
+        return response()->json($post); // Use $post instead of $blog
+    }
 
-   
-    return response()->json($blog);
-}
 }
