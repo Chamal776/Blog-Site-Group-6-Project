@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+SEU/IS/20/ICT/007
 use App\Models\Posts; 
 use App\Http\Requests\PostRequest; 
+use Illuminate\Http\Request;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -19,3 +21,14 @@ class PostController extends Controller
         return view('posts.create');
     }
 }
+
+
+class PostController extends Controller
+   // Edit function
+   public function edit($id)
+   {
+       $post = Posts::findOrFail($id);
+       return response()->json($post); // Use $post instead of $blog
+   } 
+
+ main
