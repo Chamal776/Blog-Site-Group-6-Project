@@ -5,6 +5,6 @@ use App\Models\Posts;
 use Illuminate\Http\Request;
 
 {
-    //
+
 }
 
