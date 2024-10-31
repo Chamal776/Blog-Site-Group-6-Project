@@ -1,4 +1,10 @@
+<?php
 
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PostController extends Controller
    // Edit function
    public function edit($id)
    {
