@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Posts;
 use Illuminate\Http\Request;
-use App\Models\Posts; // Ensure the Post model is imported correctly
-use App\Http\Requests\PostRequest;
 
-class PostController extends Controller
 {
-//
+
 }
+
