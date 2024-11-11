@@ -8,8 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMoK1o5fQ8mLHD8Anrw0KtvJl89C9P2ZdZcjgmx" crossorigin="anonymous">
-    
-    <!--CSS Part-->
     <style>
         /* Body background with gradient */
         body {
@@ -23,13 +21,14 @@
             background: transparent;
         }
         .navbar-brand {
-            font-size: 1.8rem;
+            font-size: 28px;
             font-weight: bold;
             color: #fff !important;
         }
         .nav-link {
             color: #f0f0f0 !important;
             font-weight: 500;
+            font-size: 16px;
         }
 
         /* Content styling */
@@ -40,6 +39,12 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+        #content h1 {
+            font-size: 32px;
+        }
+        #content p {
+            font-size: 18px;
+        }
 
         /* Footer styling */
         footer {
@@ -47,10 +52,11 @@
         }
         footer p {
             color: #ecf0f1;
+            font-size: 14px;
         }
         footer .social-links a {
             color: #1BFFFF;
-            font-size: 1.2rem;
+            font-size: 20px;
             margin-right: 10px;
         }
         footer .social-links a:hover {
@@ -97,10 +103,10 @@
                     <h5 class="modal-title" id="aboutModalLabel">About Us</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+                <!--Team Members-->
                 <div class="modal-body">
                     <p>Welcome to the Blog Site! Our mission is to share insightful articles, inspiring stories, and the latest updates on various topics. Meet the team behind the content:</p>
-                    
-                <!--Team members-->
                     <div class="row">
                         <div class="col-md-4">
                             <h5>Ishani Bandara</h5>
