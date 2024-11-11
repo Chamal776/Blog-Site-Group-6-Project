@@ -30,3 +30,4 @@ Route::delete('blog/{id}', [PostController::class, 'delete']);
 
 // To display all blog posts (if needed as a separate view)
 Route::get('blog/all', [PostController::class, 'all']); 
+
