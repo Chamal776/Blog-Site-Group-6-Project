@@ -10,6 +10,7 @@ use App\Models\Posts;
 
 class PostController extends Controller
 {
+
     //SEU/IS/20/ICT/085's Function
    // Delete function
    public function delete($id)
@@ -66,5 +67,3 @@ class PostController extends Controller
     }
 
 }
-
-
