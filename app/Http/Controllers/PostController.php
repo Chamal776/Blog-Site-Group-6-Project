@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Posts; 
+use App\Http\Requests\PostRequest; 
 use Illuminate\Http\Request;
 use App\Models\Posts; 
 
 class PostController extends Controller
 {
+
     // Edit function
     public function edit($id)
     {   
        
         $post = Posts::findOrFail($id);
-
    
         return view('posts.edit', compact('post'));
     }
@@ -22,7 +24,6 @@ class PostController extends Controller
     {
        
         $post = Posts::findOrFail($id);
-
       
         $request->validate([
             'title' => 'required|string|max:255',
@@ -40,3 +41,4 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with('success', 'Post updated successfully.');
     }
 }
+
