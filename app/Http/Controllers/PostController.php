@@ -10,6 +10,21 @@ use App\Models\Posts;
 
 class PostController extends Controller
 {
+
+    //SEU/IS/20/ICT/085's Function
+   // Delete function
+   public function delete($id)
+   {
+       
+       $post = Posts::findOrFail($id);       
+       $post->delete();   
+       
+       return response()->json([
+           'message' => 'Post deleted successfully...!',
+       ], 200);
+   }
+  
+  
   //SEU/IS/20/ICT/007's Function
     public function store(PostRequest $request)
     {
@@ -21,6 +36,7 @@ class PostController extends Controller
     {
         return view('posts.create');
     }
+  
 
 //SEU/IS/20/ICT/040's Function
     // Edit function
@@ -43,14 +59,11 @@ class PostController extends Controller
 
       
         $post->title = $request->input('title');
-        $post->content = $request->input('content');
-        
+        $post->content = $request->input('content');        
       
         $post->save();
-
        
         return redirect()->route('posts.index')->with('success', 'Post updated successfully.');
     }
+
 }
-
-
